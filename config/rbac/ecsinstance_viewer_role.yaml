@@ -1,0 +1,20 @@
+# permissions for end users to view ecsinstances.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ecsinstance-viewer-role
+rules:
+- apiGroups:
+  - alibabacloud.zhouzhengxi.com
+  resources:
+  - ecsinstances
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - alibabacloud.zhouzhengxi.com
+  resources:
+  - ecsinstances/status
+  verbs:
+  - get

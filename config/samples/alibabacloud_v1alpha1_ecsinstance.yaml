@@ -1,0 +1,9 @@
+apiVersion: alibabacloud.zhouzhengxi.com/v1alpha1
+kind: ECSInstance
+metadata:
+  name: ecsinstance-sample
+spec:
+  imageID: centos_7_8_x64_20G_alibase_20200519.vhd
+  instanceType: ecs.g6.large
+  regionID: cn-beijing
+  instanceName: ins-0702

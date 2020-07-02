@@ -1,0 +1,24 @@
+# permissions for end users to edit ecsinstances.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: ecsinstance-editor-role
+rules:
+- apiGroups:
+  - alibabacloud.zhouzhengxi.com
+  resources:
+  - ecsinstances
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - alibabacloud.zhouzhengxi.com
+  resources:
+  - ecsinstances/status
+  verbs:
+  - get

@@ -1,0 +1,7 @@
+domain: zhouzhengxi.com
+repo: github.com/zzxwill/aliyun-ecs-k8s-operator
+resources:
+- group: alibabacloud
+  kind: ECSInstance
+  version: v1alpha1
+version: "2"
